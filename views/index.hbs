@@ -1,4 +1,3 @@
-{{!-- ./views/index.handlebars --}}
 <!-- search bar -->
 <div class="container search-bar">
   <div class="search-bar-outer">
@@ -28,16 +27,21 @@
         <option value="rating" {{#ifeq sort 'rating' }} selected {{/ifeq}}>評分（低 -> 高）</option>
       </select>
     </form>
+
+    <a href="/restaurant/new">
+      <button type="button" class="btn btn-primary mt-2">新餐廳</button>
+    </a>
   </div>
 
 </div>
+
+
 
 <!-- restaurant list -->
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-10 col-12 mx-auto">
       <div class="card-columns">
-
         {{#each RestaurantListModels}}
         <a href="/restaurant/{{this._id}}" class="text-secondary">
           <div class="card mb-3">
