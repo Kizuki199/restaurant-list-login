@@ -7,20 +7,22 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const flash = require('connect-flash')
 
+require('dotenv').config()
+
 const routes = require("./routes")
 
 const usePassport = require('./config/passport')
 require('./config/mongoose')
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT
 
 // setting template engine
 app.engine("hbs", exphbs({ defaultLayout: "main", extname: ".hbs", helpers: hbsHelpers }));
 app.set("view engine", "hbs");
 
 app.use(session({
-  secret: 'ThisIsMySecret',
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: true
 }))
