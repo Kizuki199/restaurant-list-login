@@ -1,11 +1,11 @@
 # 餐廳清單
-這是一個使用 Node.js + Express 打造的餐廳網站，此網站將提供餐廳資訊及圖片讓你參考，同時可以透過搜尋關鍵字的方式找到符合你的餐廳。
+這是一個使用 Node.js + Express 打造的餐廳網站，此網站將提供餐廳資訊及圖片讓你參考，同時可以註冊、使用一般登入及Facebook登入，透過搜尋關鍵字的方式找到符合你的餐廳。
 
 
 ## Features 產品功能
-- 可以註冊。
-- 可以登入。。
-- 可以透過FACEBOOK登入。
+- 可以註冊
+- 可以登入
+- 可以透過FACEBOOK登入
 - 列出所有餐廳清單
 - 可按照條件排序餐廳
 - 可透過搜尋列輸入餐廳名稱，找出相關餐廳
@@ -18,11 +18,11 @@
 ### 以下指令請在終端機操作
 1. Clone此專案至本機
 ```
-git clone https://github.com/HenryChung81/restaurant-list-CRUD.git
+git clone https://github.com/HenryChung81/restaurant-list-CRUD-refactor-login
 ```
 2. 進入存放專案的資料夾
 ```
-cd restaurant_list_CRUD
+cd restaurant-list-CRUD-refactor-login
 ```
 3. 安裝npm套件
 ```
@@ -34,7 +34,7 @@ npm run seed
 ```
 5. 啟動伺服器，執行app.js
 ```
-npm run start
+npm run dev
 ```
 6. 此時終端機出現以下字樣表示伺服器與資料庫已啟動並成功連結
 ```
