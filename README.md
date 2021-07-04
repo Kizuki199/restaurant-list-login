@@ -18,11 +18,11 @@
 ### 以下指令請在終端機操作
 1. Clone此專案至本機
 ```
-git clone https://github.com/HenryChung81/restaurant-list-CRUD-refactor-login
+git clone https://github.com/Kizuki199/restaurant-list-login
 ```
 2. 進入存放專案的資料夾
 ```
-cd restaurant-list-CRUD-refactor-login
+cd restaurant-list-login
 ```
 3. 安裝npm套件
 ```
